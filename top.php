@@ -1,5 +1,3 @@
-<?php require 'connection.inc.php' ?>
-<?php require 'functions.inc.php' ?>
 
 <!DOCTYPE html>
 <html lang="en">
