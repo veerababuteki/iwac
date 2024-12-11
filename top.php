@@ -121,9 +121,6 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="./blogs.php" class="nav-link">Blogs</a>
-                                    </li>
-                                    <li class="nav-item">
                                         <a href="./aboutus.php" class="nav-link"> About Us</a>
                                     </li>
                                 </ul>
