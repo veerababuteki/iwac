@@ -1,0 +1,419 @@
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+  }
+  
+  .dropdown-item {
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+  }
+  
+  .dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  }
+
+
+ 
+
+
+
+  .icon-style {
+    font-size: 18px;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: white; /* Default icon color */
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: -4px; /* Align with text vertically */
+}
+
+/* Solutions Menu Icon */
+.solutions-icon {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Online Ticket Booking Icon */
+.booking-icon {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Appointment Booking Icon */
+.appointment-icon {
+    background-color: #2196f3;
+    color: white;
+}
+
+/* WhatsApp Shopping Icon */
+.whatsapp-icon {
+    background-color: #25d366;
+    color: white;
+}
+
+/* Case Studies Menu Icon */
+.case-studies-icon {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Health Care Icon */
+.healthcare-icon {
+    background-color: #e91e63;
+    color: white;
+}
+
+/* Entertainment Icon */
+.entertainment-icon {
+    background-color: #9c27b0;
+    color: white;
+}
+
+/* Tourism Icon */
+.tourism-icon {
+    background-color: #00bcd4;
+    color: white;
+}
+
+/* Real Estate Icon */
+.realstate-icon {
+    background-color: #8bc34a;
+    color: white;
+}
+
+/* About Us Icon */
+.about-icon {
+    background-color: #795548;
+    color: white;
+}
+
+/* Menu item spacing and hover effects */
+.nav-link, .dropdown-item {
+    font-size: 14px;
+    font-weight:300;
+    color: #333;
+}
+
+.nav-link:hover, .dropdown-item:hover {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+/* Align the icon and text properly */
+.navbar-nav .nav-item .nav-link i {
+    vertical-align: middle;
+}
+
+
+
+
+
+.iwac-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* overflow-y: auto; */
+    /* Allows scrolling if the content is too large */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.iwac-modal.show {
+    opacity: 1;
+}
+
+.iwac-modal-content {
+    background-color: #ffffff;
+    margin: 3% auto;
+    padding: 2.5rem;
+    width: 100%;
+    /* max-width: 600px; */
+    max-height: calc(100vh - 10%);
+    /* Ensure modal fits within viewport */
+    /* overflow-y: auto; */
+    /* Adds scroll to content if it exceeds max height */
+    border-radius: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    
+    /* transform: translateY(-50px); */
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.iwac-modal.show .iwac-modal-content {
+    /* transform: translateY(0); */
+    opacity: 1;
+}
+
+
+.iwac-modal-header {
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.iwac-modal-header h2 {
+    color: #1f2937;
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.iwac-close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #f3f4f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.iwac-close:hover {
+    background-color: #e5e7eb;
+    transform: rotate(90deg);
+}
+
+.iwac-form-group {
+    margin-bottom: 1rem;
+}
+
+.iwac-form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #374151;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.iwac-form-group input,
+.iwac-form-group textarea {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s;
+    background-color: #f9fafb;
+}
+
+.iwac-form-group input:focus,
+.iwac-form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.iwac-submit-btn {
+    width: 100%;
+    padding: 0.875rem;
+    background-color: #2e9b57;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.iwac-submit-btn:hover {
+    background-color: #146131;
+    transform: translateY(-1px);
+}
+
+.iwac-form-icon {
+    margin-right: 0.5rem;
+    color: #6b7280;
+}
+
+@keyframes iwac-shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+.iwac-error {
+    border-color: #dc2626 !important;
+    animation: iwac-shake 0.2s ease-in-out;
+}
+
+.iwac-error-message {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.iwac-error-message.show {
+    display: block;
+}
+
+.block-style-fifteen {
+    display: flex;
+    flex-direction: column; /* Allows vertical stacking of content */
+    justify-content: space-between; /* Space between items in the card */
+    height: 90%; /* Full height */
+}
+
+.icon {
+    flex: 0 0 auto; /* Allow icon to take only its necessary space */
+}
+
+h3, p {
+    flex: 1; /* Allow h3 and p to grow and fill the remaining space */
+}
+
+/* Optional: Make sure the cards maintain consistent spacing */
+
+.contact-us {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .contact-us .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-us form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact-us form .theme-btn-seven {
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    padding: 1px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight:400;
+  }
+  
+  .contact-us form .theme-btn-seven:hover {
+    background-color: #1b9a52;
+  }
+
+/* Logo added */
+body {
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.slider {
+	height: 100px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: auto;
+}
+
+.slider .slide-track {
+	animation: scroll 40s linear infinite;
+	display: flex;
+	width: calc(250px * 14);
+}
+
+.slider .slide {
+	height: 100px;
+	width: 250px;
+    margin-right: 30px;
+    /* margin-left: 20px; */
+}
+.theme-main-menu {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+@media (min-width: 1200px) and (max-width: 1450px) {
+    .theme-main-menu {
+        padding: 0 40px !important;
+    }
+}
+
+.main-page-wrapper {
+    padding-top: 120px;
+}
+
+
+.fancy-feature-ten .bg-wrapper {
+    padding: 0px 0 75px;
+}
